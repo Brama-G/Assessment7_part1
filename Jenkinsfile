@@ -26,8 +26,8 @@ pipeline {
         stage('Build for Environment') {
             steps {
                 echo "Building the application for the ${params.ENVIRONMENT} environment..."
-                sh 'python --version'
-                sh 'python -m py_compile exam_system.py'
+                sh 'python3 --version'
+                sh 'python3 -m py_compile exam_system.py'
                 echo "Exam System compiled successfully for ${params.ENVIRONMENT}."
             }
         }
