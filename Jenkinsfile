@@ -13,7 +13,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/BramaG/Assessment7_part1'
+                    url: 'https://github.com/Brama-G/Assessment7_part1.git'
             }
         }
 
